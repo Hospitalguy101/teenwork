@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script defer src="scripts/sign_up.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <button id="student-form-button">Student Sign Up</button>
+    <button id="business-form-button">Business Sign Up</button><br>
+
+    <div id="student-form" style="display: none">
+      <label for="student-name">What is your name?</label><br>
+      <input type="text" id="student-name"><br>
+
+      <label for="student-email">What is your email address?</label><br>
+      <input type="email" id="student-email"><br>
+
+      <label for="student-password">Create a password</label><br>
+      <input type="password" id="student-password"><br>
+      <label for="student-confirm">Confirm your password</label><br>
+      <input type="password" id="student-confirm"><br>
+
+      <label for="student-address">What is your address?</label><br>
+      <input type="text" id="student-address"><br>
+
+      <label for="student-transcript">Please upload your most recent transcript or any sort of information showing academic achievement</label><br>
+      <input type="file" id="student-transcript"><br>
+
+      <label for="student-bio">Tell us about yourself. What type of worker are you? What interested you in getting a job? Why should a business hire you?</label><br>
+      <input type="text" id="student-bio"><br>
+
+      <label for="student-recs">List the email(s) of any recommenders businesses could reach out to (seperated by spaces)</label><br>
+      <input type="text" id="student-recs"><br>
+
+      <label>Which business do you prefer?</label>
+      <div>
+        <input type="checkbox" id="option1" name="prefs" value="restaurant1">
+        <label for="option1">Restaurant (ice cream, deli, etc)</label>
+      </div>
+      <div>
+        <input type="checkbox" id="option2" name="prefs" value="restaurant2">
+        <label for="option2">Restaurant (server, busser, cashier, etc)</label>
+      </div>
+      <div>
+        <input type="checkbox" id="option3" name="prefs" value="convenience">
+        <label for="option3">Convenience (grocery store, gas station, stores)</label>
+      </div>
+      <div>
+        <input type="checkbox" id="option4" name="prefs" value="camp">
+        <label for="option4">Summer Camp</label>
+      </div>
+      <div>
+        <input type="checkbox" id="option5" name="prefs" value="delivery">
+        <label for="option5">Delivery</label>
+      </div>
+      <div>
+        <input type="checkbox" id="option6" name="prefs" value="lifeguard">
+        <label for="option6">Lifeguarding</label>
+      </div>
+      <div>
+        <input type="checkbox" id="option7" name="prefs" value="club">
+        <label for="option7">Country Club</label>
+      </div>
+      <div>
+        <input type="checkbox" id="option8" name="prefs" value="clothing">
+        <label for="option8">Clothing</label>
+      </div>
+      <div>
+        <input type="checkbox" id="option9" name="prefs" value="other">
+        <label for="option9">Other</label>
+      </div><br>
+
+      <label for="student-times">What times are you available?</label>
+      <table id="student-times">
+
+        <tr>
+          <th></th>
+          <th>Morning</th>
+          <th>Midday</th>
+          <th>Afternoon</th>
+          <th>Evening</th>
+        </tr>
+
+        <tr>
+          <th>Monday</th>
+          <td><input type="checkbox" id="monday-morning" name="time" value="monday-morning"></td>
+          <td><input type="checkbox" id="monday-midday" name="time" value="monday-midday"></td>
+          <td><input type="checkbox" id="monday-afternoon" name="time" value="monday-afternoon"></td>
+          <td><input type="checkbox" id="monday-evening" name="time" value="monday-evening"></td>
+        </tr>
+
+        <tr>
+          <th>Tuesday</th>
+          <td><input type="checkbox" id="tuesday-morning" name="time" value="tuesday-morning"></td>
+          <td><input type="checkbox" id="tuesday-midday" name="time" value="tuesday-midday"></td>
+          <td><input type="checkbox" id="tuesday-afternoon" name="time" value="tuesday-afternoon"></td>
+          <td><input type="checkbox" id="tuesday-evening" name="time" value="tuesday-evening"></td>
+        </tr>
+
+        <tr>
+          <th>Wednesday</th>
+          <td><input type="checkbox" id="wednesday-morning" name="time" value="wednesday-morning"></td>
+          <td><input type="checkbox" id="wednesday-midday" name="time" value="wednesday-midday"></td>
+          <td><input type="checkbox" id="wednesday-afternoon" name="time" value="wednesday-afternoon"></td>
+          <td><input type="checkbox" id="wednesday-evening" name="time" value="wednesday-evening"></td>
+        </tr>
+
+        <tr>
+          <th>Thrusday</th>
+          <td><input type="checkbox" id="thursday-morning" name="time" value="thursday-morning"></td>
+          <td><input type="checkbox" id="thursday-midday" name="time" value="thursday-midday"></td>
+          <td><input type="checkbox" id="thursday-afternoon" name="time" value="thursday-afternoon"></td>
+          <td><input type="checkbox" id="thursday-evening" name="time" value="thursday-evening"></td>
+        </tr>
+
+        <tr>
+          <th>Friday</th>
+          <td><input type="checkbox" id="friday-morning" name="time" value="friday-morning"></td>
+          <td><input type="checkbox" id="friday-midday" name="time" value="friday-midday"></td>
+          <td><input type="checkbox" id="friday-afternoon" name="time" value="friday-afternoon"></td>
+          <td><input type="checkbox" id="friday-evening" name="time" value="friday-evening"></td>
+        </tr>
+
+        <tr>
+          <th>Saturday</th>
+          <td><input type="checkbox" id="saturday-morning" name="time" value="saturday-morning"></td>
+          <td><input type="checkbox" id="saturday-midday" name="time" value="saturday-midday"></td>
+          <td><input type="checkbox" id="saturday-afternoon" name="time" value="saturday-afternoon"></td>
+          <td><input type="checkbox" id="saturday-evening" name="time" value="saturday-evening"></td>
+        </tr>
+
+        <tr>
+          <th>Sunday</th>
+          <td><input type="checkbox" id="sunday-morning" name="time" value="sunday-morning"></td>
+          <td><input type="checkbox" id="sunday-midday" name="time" value="sunday-midday"></td>
+          <td><input type="checkbox" id="sunday-afternoon" name="time" value="sunday-afternoon"></td>
+          <td><input type="checkbox" id="sunday-evening" name="time" value="sunday-evening"></td>
+        </tr>
+      </table><br>
+
+      <button id="student-sign-up">Sign Up</button>
+    </div>
+
+    <div id="business-form" style="display:none">
+      <label for="business-name">What is the name of your business?</label><br>
+      <input type="text" id="business-name"><br>
+
+      <label for="business-email">What is your email?</label><br>
+      <input type="email" id="business-email"><br>
+
+      <label for="business-password">Create a password</label><br>
+      <input type="password" id="business-password"><br>
+      <label for="business-confirm">Confirm your password</label><br>
+      <input type="password" id="business-confirm"><br>
+
+      <label for="business-location">Where are you located?</label><br>
+      <input type="text" id="business-location"><br>
+
+      <label>What kind of employees are you looking for?</label>
+      <div>
+        <input type="checkbox" id="b-option1" name="prefs" value="restaurant1">
+        <label for="option1">Restaurant (ice cream, deli, etc)</label>
+      </div>
+      <div>
+        <input type="checkbox" id="b-option2" name="prefs" value="restaurant2">
+        <label for="option2">Restaurant (server, busser, cashier, etc)</label>
+      </div>
+      <div>
+        <input type="checkbox" id="b-option3" name="prefs" value="convenience">
+        <label for="option3">Convenience (grocery store, gas station, stores)</label>
+      </div>
+      <div>
+        <input type="checkbox" id="b-option4" name="type" value="camp">
+        <label for="option4">Summer Camp</label>
+      </div>
+      <div>
+        <input type="checkbox" id="b-option5" name="type" value="delivery">
+        <label for="option5">Delivery</label>
+      </div>
+      <div>
+        <input type="checkbox" id="b-option6" name="type" value="lifeguard">
+        <label for="option6">Lifeguarding</label>
+      </div>
+      <div>
+        <input type="checkbox" id="b-option7" name="type" value="club">
+        <label for="option7">Country Club</label>
+      </div>
+      <div>
+        <input type="checkbox" id="b-option8" name="type" value="clothing">
+        <label for="option8">Clothing</label>
+      </div>
+      <div>
+        <input type="checkbox" id="b-option9" name="type" value="other">
+        <label for="option9">Other</label>
+      </div><br>
+
+      <label for="business-bio">Describe your business:</label><br>
+      <input type="text" id="business-bio"><br>
+
+      <label for="business-times">When are you available for us to verify your business?</label><br>
+      <input type="datetime-local" id="business-times"><br>
+
+      <label for="business-how-they-heard">How did you hear about us? (Optional)</label><br>
+      <input type="text" id="business-how-they-heard"><br><br>
+
+      <button id="business-sign-up">Sign Up</button>
+    </div><br>
+    <a href="signin.html">Already have an account?</a>
+  </body>
+</html>
